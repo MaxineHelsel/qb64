@@ -871,10 +871,10 @@ FUNCTION ide2 (ignore)
             IF showexecreated THEN
                 showexecreated = 0
 
-                IF os$ = "LNX" THEN
-                    _PRINTSTRING (2, idewy - 3), "Executable file created"
-                ELSE
+                IF os$ = "WIN" THEN
                     _PRINTSTRING (2, idewy - 3), ".EXE file created"
+                ELSE
+                    _PRINTSTRING (2, idewy - 3), "Executable file created"
                 END IF
 
                 IF SaveExeWithSource THEN
